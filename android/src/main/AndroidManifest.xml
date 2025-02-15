@@ -1,3 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.typestepcounter">
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
+    
+    <application
+        android:allowBackup="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        
+        <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="true"/>
+        
+    </application>
+
 </manifest>

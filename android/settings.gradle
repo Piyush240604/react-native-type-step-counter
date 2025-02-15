@@ -1,0 +1,6 @@
+rootProject.name = "react-native-type-step-counter"
+
+apply from: file("${rootDir}/../node_modules/@react-native-community/cli-platform-android/native_modules.gradle")
+applyNativeModulesSettingsGradle(settings)
+
+include ':app'
