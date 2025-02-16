@@ -6178,6 +6178,27 @@ latest-version@^9.0.0:
   dependencies:
     package-json "^10.0.0"
 
+lefthook-windows-x64@1.10.10:
+  version "1.10.10"
+  resolved "https://registry.npmjs.org/lefthook-windows-x64/-/lefthook-windows-x64-1.10.10.tgz"
+  integrity sha512-gkKWYrlay4iecFfY1Ris5VcRYa0BaNJKMk0qE/wZmIpMgu4GvNg+f9BEwTMflkQIanABduT9lrECaL1lX5ClKw==
+
+lefthook@^1.10.10:
+  version "1.10.10"
+  resolved "https://registry.npmjs.org/lefthook/-/lefthook-1.10.10.tgz"
+  integrity sha512-YW0fTONgOXsephvXq2gIFbegCW19MHCyKYX7JDWmzVF1ZiVMnDBYUL/SP3i0RtFvlCmqENl4SgKwYYQGUMnvig==
+  optionalDependencies:
+    lefthook-darwin-arm64 "1.10.10"
+    lefthook-darwin-x64 "1.10.10"
+    lefthook-freebsd-arm64 "1.10.10"
+    lefthook-freebsd-x64 "1.10.10"
+    lefthook-linux-arm64 "1.10.10"
+    lefthook-linux-x64 "1.10.10"
+    lefthook-openbsd-arm64 "1.10.10"
+    lefthook-openbsd-x64 "1.10.10"
+    lefthook-windows-arm64 "1.10.10"
+    lefthook-windows-x64 "1.10.10"
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz"
