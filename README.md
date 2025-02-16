@@ -1,33 +1,66 @@
 # react-native-type-step-counter
 
-Custom React Native module that provides access to the step counter sensor
+A lightweight React Native library to access the `Sensor.TYPE_STEP_COUNTER` on Android devices, without using `TYPE_ACCELEROMETER`. This library provides an easy-to-use interface to track step counts in your React Native application.
+
+## Features
+- Utilizes `Sensor.TYPE_STEP_COUNTER` for accurate step tracking.
+- No usage of `TYPE_ACCELEROMETER` as per design.
+- Simple API to start and stop step counting.
+- Lightweight and optimized for React Native.
 
 ## Installation
 
-```sh
+```bash
 npm install react-native-type-step-counter
 ```
 
-## Usage
+or
 
-
-```js
-import { multiply } from 'react-native-type-step-counter';
-
-// ...
-
-const result = await multiply(3, 7);
+```bash
+yarn add react-native-type-step-counter
 ```
-
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+## Usage
+
+```js
+import StepCounter from 'react-native-type-step-counter';
+
+StepCounter.startStepCounter();
+
+StepCounter.onStepCountChange((steps) => {
+  console.log('Steps counted:', steps);
+});
+
+StepCounter.stopStepCounter();
+```
+
+---
+
+## API
+
+### `startStepCounter()`
+Starts the step counter.
+
+### `stopStepCounter()`
+Stops the step counter.
+
+### `onStepCountChange(callback)`
+Registers a callback function that receives the current step count as a parameter.
+
+---
+
+## Platform Support
+- **Android** only.
+
+---
+
+## Contributing
+Contributions are welcome! Feel free to open issues or submit PRs.
+
+---
+
+## License
+This project is licensed under the MIT License.
+
